@@ -1,7 +1,7 @@
 VERSION=$1
 touch filename-$VERSION.md
 
-BRANCH_NAME=new/$VERSION
+BRANCH_NAME=new/110
 
 BRANCH_EXISTS="$(git ls-remote --exit-code --heads origin "$BRANCH_NAME" | wc -l)"
 
