@@ -1,6 +1,6 @@
 VERSION=$1
 
-BRANCH_NAME=new/180
+BRANCH_NAME=new/210
 
 BRANCH_EXISTS="$(git ls-remote --exit-code --heads origin "$BRANCH_NAME" | wc -l)"
 echo $BRANCH_EXISTS
@@ -18,4 +18,4 @@ touch filename-$VERSION.md
 git add .
 git commit -am "feat: added $VERSION"
 git show HEAD
-git push --set-upstream origin "$BRANCH_NAME"
+git push origin "$BRANCH_NAME"
