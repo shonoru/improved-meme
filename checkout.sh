@@ -1,5 +1,4 @@
 VERSION=$1
-touch filename-$VERSION.md
 
 BRANCH_NAME=new/120
 
@@ -13,6 +12,8 @@ else
     echo "2"
     git checkout -b "$BRANCH_NAME"
 fi;
+
+touch filename-$VERSION.md
 
 git add .
 git commit -am "feat: added $VERSION"
