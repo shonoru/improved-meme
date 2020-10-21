@@ -1,6 +1,6 @@
 VERSION=$1
 
-BRANCH_NAME=new/120
+BRANCH_NAME=new/180
 
 BRANCH_EXISTS="$(git ls-remote --exit-code --heads origin "$BRANCH_NAME" | wc -l)"
 echo $BRANCH_EXISTS
