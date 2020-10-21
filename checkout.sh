@@ -13,3 +13,5 @@ fi;
 
 git add .
 git commit -am "feat: added $VERSION"
+git show HEAD
+git push --set-upstream origin "$BRANCH_NAME"
